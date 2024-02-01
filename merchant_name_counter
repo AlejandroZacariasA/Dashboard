@@ -1,0 +1,1 @@
+select count(merchant_name) from transactions WHERE merchant_name <> 'NULL'  AND  created_at>={{dateRange1.value.start}}::timestamp with time zone AND created_at<={{dateRange1.value.end}}::timestamp with time zone ;
