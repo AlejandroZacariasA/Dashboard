@@ -1,0 +1,3 @@
+const merchant_logo_percent = {{ merchant_logo_counter.data.count }}/{{get_all_merchant_logo.data.count}};
+
+return merchant_logo_percent
