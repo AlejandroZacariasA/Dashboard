@@ -1,0 +1,3 @@
+const category_percent = {{category_name_counter.data.count }}/{{get_all_category_name.data.count}}
+
+return category_percent
