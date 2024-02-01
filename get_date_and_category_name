@@ -1,0 +1,1 @@
+select DATE(created_at),count(category_name) from transactions where category_name <> 'NULL' AND created_at>={{dateRange1.value.start}}::timestamp with time zone AND created_at<={{dateRange1.value.end}}::timestamp with time zone + INTERVAL '1 millisecond' GROUP BY date(created_at) ;
