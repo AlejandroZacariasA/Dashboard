@@ -1,0 +1,5 @@
+SELECT COUNT(id) as max_requests_per_second FROM request 
+WHERE created_at BETWEEN {{dateRange1.value.start}}::DATE and {{dateRange1.value.end}}::DATE
+group by DATE_TRUNC('DAY', created_at),DATE_TRUNC('SECOND',created_at)
+ORDER BY COUNT(id) desc
+LIMIT 1;
