@@ -1,0 +1,3 @@
+const merchant_name_percent = {{ merchant_name_counter.data.count }}/{{get_all_merchant_name.data.count}};
+
+return merchant_name_percent
