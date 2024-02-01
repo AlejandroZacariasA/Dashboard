@@ -1,0 +1,2 @@
+const Q1={{Transactions_Counter.data.count}}/{{query4.data.segundos}};
+return Q1
