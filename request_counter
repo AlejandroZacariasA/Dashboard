@@ -1,0 +1,1 @@
+select COUNT(id) from request WHERE created_at>={{dateRange1.value.start}}::timestamp with time zone AND created_at<={{dateRange1.value.end}}::timestamp with time zone + INTERVAL '1 millisecond';
