@@ -1,0 +1,1 @@
+SELECT ({{dateRange1.value.end}}:: DATE-{{dateRange1.value.start}} :: DATE)*86400 as SEGUNDOS;
